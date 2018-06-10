@@ -1,0 +1,6 @@
+E:\ATM\LICENTA!!!\licenta\ClassLibraryWrapper\ClassLibraryWrapper\bin\x64\Debug\ClassLibraryWrapper.dll.config
+E:\ATM\LICENTA!!!\licenta\ClassLibraryWrapper\ClassLibraryWrapper\bin\x64\Debug\ClassLibraryWrapper.dll
+E:\ATM\LICENTA!!!\licenta\ClassLibraryWrapper\ClassLibraryWrapper\bin\x64\Debug\ClassLibraryWrapper.pdb
+E:\ATM\LICENTA!!!\licenta\ClassLibraryWrapper\ClassLibraryWrapper\obj\x64\Debug\ClassLibraryWrapper.csprojResolveAssemblyReference.cache
+E:\ATM\LICENTA!!!\licenta\ClassLibraryWrapper\ClassLibraryWrapper\obj\x64\Debug\ClassLibraryWrapper.dll
+E:\ATM\LICENTA!!!\licenta\ClassLibraryWrapper\ClassLibraryWrapper\obj\x64\Debug\ClassLibraryWrapper.pdb

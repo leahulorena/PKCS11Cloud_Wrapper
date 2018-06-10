@@ -1,0 +1,8 @@
+E:\ATM\LICENTA!!!\licenta\ClassLibraryWrapper\ClassLibraryWrapper\bin\Release\ClassLibraryWrapper.dll.config
+E:\ATM\LICENTA!!!\licenta\ClassLibraryWrapper\ClassLibraryWrapper\bin\Release\ClassLibraryWrapper.dll
+E:\ATM\LICENTA!!!\licenta\ClassLibraryWrapper\ClassLibraryWrapper\bin\Release\ClassLibraryWrapper.XmlSerializers.dll
+E:\ATM\LICENTA!!!\licenta\ClassLibraryWrapper\ClassLibraryWrapper\bin\Release\ClassLibraryWrapper.pdb
+E:\ATM\LICENTA!!!\licenta\ClassLibraryWrapper\ClassLibraryWrapper\obj\Release\ClassLibraryWrapper.csprojResolveAssemblyReference.cache
+E:\ATM\LICENTA!!!\licenta\ClassLibraryWrapper\ClassLibraryWrapper\obj\Release\ClassLibraryWrapper.dll
+E:\ATM\LICENTA!!!\licenta\ClassLibraryWrapper\ClassLibraryWrapper\obj\Release\ClassLibraryWrapper.pdb
+E:\ATM\LICENTA!!!\licenta\ClassLibraryWrapper\ClassLibraryWrapper\obj\Release\ClassLibraryWrapper.XmlSerializers.dll

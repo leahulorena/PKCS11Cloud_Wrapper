@@ -1,0 +1,9 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="ClassLibraryWrapper.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="ClassLibraryWrapper_localhost_DSWS" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost/DSWS/DSWS.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

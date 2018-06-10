@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="GetUserCertificate">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="username" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUserCertificateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetUserCertificateResult" type="s:base64Binary" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SignData">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="data" type="s:base64Binary" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SignDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SignDataResult" type="s:base64Binary" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getSignaturelLen">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="data" type="s:base64Binary" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getSignaturelLenResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="getSignaturelLenResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetUserCertificateSoapIn">
+    <wsdl:part name="parameters" element="tns:GetUserCertificate" />
+  </wsdl:message>
+  <wsdl:message name="GetUserCertificateSoapOut">
+    <wsdl:part name="parameters" element="tns:GetUserCertificateResponse" />
+  </wsdl:message>
+  <wsdl:message name="SignDataSoapIn">
+    <wsdl:part name="parameters" element="tns:SignData" />
+  </wsdl:message>
+  <wsdl:message name="SignDataSoapOut">
+    <wsdl:part name="parameters" element="tns:SignDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="getSignaturelLenSoapIn">
+    <wsdl:part name="parameters" element="tns:getSignaturelLen" />
+  </wsdl:message>
+  <wsdl:message name="getSignaturelLenSoapOut">
+    <wsdl:part name="parameters" element="tns:getSignaturelLenResponse" />
+  </wsdl:message>
+  <wsdl:portType name="DSWSSoap">
+    <wsdl:operation name="GetUserCertificate">
+      <wsdl:input message="tns:GetUserCertificateSoapIn" />
+      <wsdl:output message="tns:GetUserCertificateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SignData">
+      <wsdl:input message="tns:SignDataSoapIn" />
+      <wsdl:output message="tns:SignDataSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getSignaturelLen">
+      <wsdl:input message="tns:getSignaturelLenSoapIn" />
+      <wsdl:output message="tns:getSignaturelLenSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="DSWSSoap" type="tns:DSWSSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetUserCertificate">
+      <soap:operation soapAction="http://tempuri.org/GetUserCertificate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SignData">
+      <soap:operation soapAction="http://tempuri.org/SignData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSignaturelLen">
+      <soap:operation soapAction="http://tempuri.org/getSignaturelLen" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="DSWSSoap12" type="tns:DSWSSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetUserCertificate">
+      <soap12:operation soapAction="http://tempuri.org/GetUserCertificate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SignData">
+      <soap12:operation soapAction="http://tempuri.org/SignData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSignaturelLen">
+      <soap12:operation soapAction="http://tempuri.org/getSignaturelLen" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="DSWS">
+    <wsdl:port name="DSWSSoap" binding="tns:DSWSSoap">
+      <soap:address location="http://localhost/DSWS/DSWS.asmx" />
+    </wsdl:port>
+    <wsdl:port name="DSWSSoap12" binding="tns:DSWSSoap12">
+      <soap12:address location="http://localhost/DSWS/DSWS.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
